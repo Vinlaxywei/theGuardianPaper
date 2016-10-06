@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TheGuardian</string>
+    <string name="search_view_hint">input key word</string>
+</resources>
