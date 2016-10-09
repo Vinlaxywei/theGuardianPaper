@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-</LinearLayout>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CardView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    CardView:cardCornerRadius="4dp"
+    CardView:contentPadding="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:fontFamily="sans"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            tools:text="新闻标题" />
+
+        <TextView
+            android:id="@+id/publicationDateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="发布日期" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

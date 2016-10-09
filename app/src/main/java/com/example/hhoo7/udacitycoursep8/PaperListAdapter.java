@@ -13,8 +13,9 @@ import java.util.List;
 public class PaperListAdapter extends ArrayAdapter<Paper> {
     private Context mContext;
 
-    public PaperListAdapter(Context context, List<Paper> news) {
-        super(context, 0, news);
+    public PaperListAdapter(Context context, List<Paper> paperList) {
+        super(context, 0, paperList);
+        mContext = context;
     }
 
     @NonNull
